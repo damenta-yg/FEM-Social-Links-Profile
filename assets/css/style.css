@@ -142,3 +142,23 @@ main {
     padding: 1.7rem;
   }
 }
+
+@media (orientation: landscape) {
+  main {
+    flex-direction: row; /* biar gak terlalu tinggi */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .card {
+    width: 60%;
+    max-height: 80vh;
+    flex-direction: row; /* bisa juga tetap column kalau mau */
+    align-items: flex-start;
+  }
+
+  .list-container {
+    gap: 1rem;
+  }
+}
